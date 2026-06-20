@@ -1,0 +1,15 @@
+# ESXi主机清单，支持多台批量录入
+esxi_hosts:
+  - host: 192.168.1.10
+    user: root
+    pwd: "你的密码"
+    port: 443
+  - host: 192.168.1.11
+    user: root
+    pwd: "你的密码"
+    port: 443
+
+# 全局任务配置
+task_config:
+  snapshot_expire_day: 30  # 过期快照清理天数
+  export_path: "./output"
